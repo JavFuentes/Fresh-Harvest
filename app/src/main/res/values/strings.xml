@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fresh Harvest</string>
+    <string name="fresh_harvest_title">Fresh Harvest</string>
+    <string name="iniciar_sesion_btn_text">Iniciar Sesión</string>
+    <string name="registrarse_btn_text">Registrarse</string>
+    <string name="iniciar_como_invitado_btn_text">Iniciar como invitado</string>
+</resources>
