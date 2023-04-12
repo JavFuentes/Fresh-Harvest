@@ -1,94 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/image_logo"
-        android:layout_width="164dp"
-        android:layout_height="189dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.429"
-        app:srcCompat="@drawable/fresh_harvest_logo" />
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="142dp"
-        android:layout_height="88dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/fredoka_one_regular"
-        android:text="@string/fresh_harvest_title"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/image_logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btn_iniciar_sesion"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/boton_redondeado"
-        android:fontFamily="@font/fredoka_one_regular"
-        android:text="@string/iniciar_sesion_btn_text"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_logo" />
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="164dp"
+            android:layout_height="189dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.429"
+            app:srcCompat="@drawable/fresh_harvest_logo" />
 
-    <Button
-        android:id="@+id/btn_registrar"
-        style="@style/RegisterButton"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/boton_redondeado"
-        android:fontFamily="@font/fredoka_one_regular"
-        android:text="@string/registrarse_btn_text"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_iniciar_sesion" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="142dp"
+            android:layout_height="88dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/fredoka_one_regular"
+            android:text="@string/fresh_harvest_title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/image_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btn_usuario_invitado"
-        style="@style/AnonUserButton"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/boton_redondeado"
-        android:fontFamily="@font/fredoka_one_regular"
-        android:text="@string/iniciar_como_invitado_btn_text"
-        android:textAllCaps="false"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_registrar" />
+        <Button
+            android:id="@+id/btn_iniciar_sesion"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_redondeado"
+            android:fontFamily="@font/fredoka_one_regular"
+            android:text="@string/iniciar_sesion_btn_text"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_logo" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/loading_1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="72dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.527"
-        app:layout_constraintStart_toStartOf="parent"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/loading_1" />
+        <Button
+            android:id="@+id/btn_registrar"
+            style="@style/RegisterButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boton_redondeado"
+            android:fontFamily="@font/fredoka_one_regular"
+            android:text="@string/registrarse_btn_text"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_iniciar_sesion" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btn_usuario_invitado"
+            style="@style/AnonUserButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boton_redondeado"
+            android:fontFamily="@font/fredoka_one_regular"
+            android:text="@string/iniciar_como_invitado_btn_text"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_registrar" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loading_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="72dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading_1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/overlay_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/contenedor"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph"/>
+
+
+    </LinearLayout>
+</FrameLayout>
